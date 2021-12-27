@@ -23,9 +23,22 @@ h1 {
   font-size: 96px;
 }
 
+h2 {
+  font-size: 64px;
+  line-height: 70px;
+}
 p {
   font-weight: normal;
+  color: #272142;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 55px 0 50px;
 }
+
+img {
+  border: 10px solid var(--secondary-color);
+}
+
 .hero {
   background: #f9f7fe;
   text-align: center;
@@ -53,7 +66,7 @@ p {
   margin: 24px 0 49px;
 }
 
-.button-branding {
+.btn-branding {
   background: var(--branding-color);
   padding: 18px 46px;
   color: white;
@@ -61,4 +74,21 @@ p {
   line-height: 1.5;
   font-weight: medium;
   border-radius: 4px;
+}
+
+.btn-branding-outline {
+  font-weight: medium;
+  font-size: 16px;
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  padding: 18px 25px;
+}
+
+.project-description {
+  margin-left: 61px;
+}
+
+.project-description p {
+  opacity: 70%;
+  line-height: 30px;
 }
