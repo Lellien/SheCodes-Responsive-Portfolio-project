@@ -30,11 +30,12 @@ h2 {
 }
 p {
   color: #272142;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0;
 }
 
-img {
+img.project-img {
   border: 10px solid var(--secondary-color);
 }
 
@@ -71,6 +72,8 @@ img {
 
 p.grid-title {
   margin: 127px 0 82px;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .btn-branding-outline {
@@ -86,13 +89,44 @@ p.grid-title {
 }
 
 .project-description p {
-  opacity: 70%;
-  font-size: 16px;
-  line-height: 30px;
   margin: 55px 0 50px;
 }
 
-@media (max-width: 900px) {
+.muted-p {
+  opacity: 70%;
+}
+
+.about-hero {
+  padding: 276px 20px;
+}
+
+.about-hero-content {
+  padding: 30px;
+}
+
+.about-hero h1 {
+  font-size: 64px;
+  font-family: var(--heading-font-family);
+  line-height: 85px;
+}
+
+.about-hero h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+  line-height: 1.5;
+  color: #272142;
+  margin: 29px 0 28px;
+}
+
+.about-hero .btn {
+  padding: 18px 31px;
+  margin-top: 48px;
+}
+img.profile-img {
+  border-radius: 30px;
+}
+
+@media (max-width: 992px) {
   h1 {
     font-size: 44px;
     line-height: 2;
@@ -124,5 +158,12 @@ p.grid-title {
   }
   .project-description p {
     margin: 20px 0 20px;
+  }
+  .about-hero {
+    text-align: center;
+    padding: 20px 0 0 0;
+  }
+  .about-hero-content {
+    padding: 0 0 50px;
   }
 }
