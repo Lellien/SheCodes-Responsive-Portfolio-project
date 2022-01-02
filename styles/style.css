@@ -1,6 +1,7 @@
 :root {
   --branding-color: #6c63ff;
   --secondary-color: #f9f7fe;
+  --alt-text-color: #272142;
   --default-font-family: "Poppins", sans-serif;
   --heading-font-family: "Playfair Display", serif;
 }
@@ -29,14 +30,10 @@ h2 {
   line-height: 70px;
 }
 p {
-  color: #272142;
+  color: var(--alt-text-color);
   font-size: 16px;
   line-height: 30px;
   margin: 0;
-}
-
-img.project-img {
-  border: 10px solid var(--secondary-color);
 }
 
 .hero {
@@ -53,7 +50,7 @@ img.project-img {
 
 .hero h2 {
   font-family: var(--default-font-family);
-  color: #272142;
+  color: var(--alt-text-color);
   font-size: 24px;
   font-weight: normal;
   line-height: 1.5;
@@ -96,34 +93,51 @@ p.grid-title {
   opacity: 70%;
 }
 
-.about-hero {
+.content-wrapper {
   padding: 276px 20px;
 }
 
-.about-hero-content {
+.content {
   padding: 30px;
 }
 
-.about-hero h1 {
+.content h1 {
   font-size: 64px;
   font-family: var(--heading-font-family);
   line-height: 85px;
 }
 
-.about-hero h2 {
+.content h2 {
   font-size: 18px;
   font-family: var(--default-font-family);
   line-height: 1.5;
-  color: #272142;
+  color: var(--alt-text-color);
   margin: 29px 0 28px;
 }
 
-.about-hero .btn {
+.content h3 {
+  font-family: var(--default-font-family);
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 16px 0 9px;
+}
+
+.content p.project-tag {
+  font-size: 14px;
+}
+
+.content .btn {
   padding: 18px 31px;
   margin-top: 48px;
 }
+
 img.profile-img {
   border-radius: 30px;
+}
+
+img.project-img {
+  border-radius: 20px;
+  /* border: 10px solid var(--secondary-color); */
 }
 
 @media (max-width: 992px) {
@@ -159,11 +173,11 @@ img.profile-img {
   .project-description p {
     margin: 20px 0 20px;
   }
-  .about-hero {
+  .content-wrapper {
     text-align: center;
     padding: 20px 0 0 0;
   }
-  .about-hero-content {
+  .content {
     padding: 0 0 50px;
   }
 }
