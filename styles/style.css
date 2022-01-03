@@ -41,14 +41,32 @@ ul {
   padding: 0;
 }
 
-li {
-  margin-bottom: 40px;
+nav {
+  padding: 20px 0;
+}
+
+nav li {
+  display: inline;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--alt-text-color);
+  transition: all 100ms ease-in-out;
+  font-weight: 500;
+}
+
+nav li.active a,
+nav a:hover {
+  color: var(--branding-color);
 }
 
 .hero {
   background: #f9f7fe;
   text-align: center;
-  padding: 276px 20px;
+  padding: 160px 20px;
 }
 
 .hero p {
@@ -135,6 +153,10 @@ p.grid-title {
   font-size: 14px;
 }
 
+.content li {
+  margin-bottom: 40px;
+}
+
 .content .btn {
   padding: 18px 31px;
   margin-top: 48px;
@@ -147,6 +169,10 @@ img.profile-img {
 img.project-img {
   border-radius: 20px;
   /* border: 10px solid var(--secondary-color); */
+}
+
+.logo {
+  max-height: 40px;
 }
 
 @media (max-width: 992px) {
@@ -188,5 +214,8 @@ img.project-img {
   }
   .content {
     padding: 0 0 50px;
+  }
+  nav a {
+    font-size: 14px;
   }
 }
