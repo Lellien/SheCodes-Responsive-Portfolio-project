@@ -223,3 +223,18 @@ img.logo {
     font-size: 14px;
   }
 }
+
+@media (max-width: 400px) {
+  img.logo {
+    /* display: none !important; */
+    max-height: 35px;
+  }
+  nav a {
+    font-size: 12px;
+  }
+  nav li {
+    display: inline;
+    line-height: 35px;
+    margin-left: 5px;
+  }
+}
