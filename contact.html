@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact details for Yael Fromm, front-end developer based in the UK."
+    />
     <script
       src="https://kit.fontawesome.com/9c21891d4e.js"
       crossorigin="anonymous"
@@ -26,28 +30,34 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/styles/style.css" class="css" />
-    <title>Contact | Yael Fromm</title>
+    <title>Contact Yael | Yael Fromm</title>
   </head>
   <body>
     <div class="container">
       <nav class="d-flex justify-content-between">
-        <a href="/">
+        <a href="/" title="Homepage">
           <img
             class="logo d-none d-md-block"
             src="/images/logo.png"
-            alt="shecodes-logo"
+            alt="Yael Logo"
           />
           <img
             class="logo d-block d-md-none"
             src="/images/yf-symbol.png"
-            alt="small-logo"
+            alt="Yael Logo"
           />
         </a>
         <ul>
-          <li class="muted-color"><a href="/">Home</a></li>
-          <li class="muted-color"><a href="/about.html">About</a></li>
-          <li class="muted-color"><a href="/work.html">Work</a></li>
-          <li class="active"><a href="/contact.html">Contact</a></li>
+          <li title="Homepage" class="muted-color"><a href="/">Home</a></li>
+          <li title="About Yael" class="muted-color">
+            <a href="/about.html">About</a>
+          </li>
+          <li title="Yael's work" class="muted-color">
+            <a href="/work.html">Work</a>
+          </li>
+          <li title="Contact Yael" class="active">
+            <a href="/contact.html">Contact</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -59,13 +69,18 @@
           <li>
             <h3>Email</h3>
             <p>
-              <a href="mailto:myemail@emailprovider">myemail@emailprovider</a>
+              <a title="Email Yael" href="mailto:myemail@emailprovider"
+                >myemail@emailprovider</a
+              >
             </p>
           </li>
           <li>
             <h3>LinkedIn</h3>
             <p>
-              <a href="https://www.linkedin.com/in/yael-fromm/" target="_blank"
+              <a
+                title="LinkedIn profile"
+                href="https://www.linkedin.com/in/yael-fromm/"
+                target="_blank"
                 >Yael Fromm</a
               >
             </p>
@@ -73,13 +88,75 @@
           <li>
             <h3>Twitter</h3>
             <p>
-              <a href="https://www.twitter.com" target="_blank"
+              <a
+                title="Twitter profile"
+                href="https://www.twitter.com"
+                target="_blank"
                 >@twitter-handle</a
               >
             </p>
           </li>
         </ul>
       </div>
+    </div>
+    <div class="container">
+      <footer>
+        <section
+          class="d-none d-lg-none justify-content-between align-items-center contact-box"
+        >
+          <div class="mb-3 mb-lg-0">
+            <h3>Work Inquiry</h3>
+            <p class="muted-color">Let's work together</p>
+          </div>
+          <div class="mb-3 mb-lg-0">
+            <a
+              title="Contact Yael"
+              href="/contact.html"
+              class="btn btn-branding"
+              >Contact me</a
+            >
+          </div>
+        </section>
+        <div class="email-link-container d-none">
+          <a
+            title="Email Yael"
+            class="email-link"
+            href="mailto:myemail@emailprovider"
+          >
+            myemail@emailprovider
+          </a>
+        </div>
+        <div class="social d-flex justify-content-center">
+          <a
+            title="Github profile"
+            href="https://github.com/Lellien"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            title="Twitter profile"
+            href="https://www.twitter.com"
+            target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            title="LinkedIn profile"
+            href="https://www.linkedin.com/in/yael-fromm/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+        <p class="text-center mt-5 source-info">
+          This project was coded by Yael Fromm and is
+          <a
+            title="Github repository"
+            href="https://github.com/Lellien/SheCodes-Responsive-Portfolio-project"
+            target="_blank"
+            >open sourced</a
+          >
+        </p>
+      </footer>
     </div>
   </body>
 </html>

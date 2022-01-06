@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Yael is a front-end engineer based in Yorkshire, United Kingdom. See a brief description of some of her featured projects"
+    />
     <script
       src="https://kit.fontawesome.com/9c21891d4e.js"
       crossorigin="anonymous"
@@ -26,28 +30,34 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/styles/style.css" class="css" />
-    <title>Homepage | Yael Fromm</title>
+    <title>Front-end developer | Yael Fromm</title>
   </head>
   <body>
     <div class="container">
       <nav class="d-flex justify-content-between">
-        <a href="/">
+        <a href="/" title="Homepage">
           <img
             class="logo d-none d-md-block"
             src="/images/logo.png"
-            alt="shecodes-logo"
+            alt="Yael Logo"
           />
           <img
             class="logo d-block d-md-none"
             src="/images/yf-symbol.png"
-            alt="small-logo"
+            alt="Yael Logo"
           />
         </a>
         <ul>
-          <li class="active"><a href="/">Home</a></li>
-          <li class="muted-color"><a href="/about.html">About</a></li>
-          <li class="muted-color"><a href="/work.html">Work</a></li>
-          <li class="muted-color"><a href="/contact.html">Contact</a></li>
+          <li title="Homepage" class="active"><a href="/">Home</a></li>
+          <li title="About Yael" class="muted-color">
+            <a href="/about.html">About</a>
+          </li>
+          <li title="Yael's work" class="muted-color">
+            <a href="/work.html">Work</a>
+          </li>
+          <li title="Contact Yael" class="muted-color">
+            <a href="/contact.html">Contact</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -55,24 +65,35 @@
       <p><i class="fas fa-hand-sparkles hand-symbol"></i> Hi, I'm</p>
       <h1>Yael Fromm</h1>
       <h2>Front-end Developer, based in the UK</h2>
-      <a href="#" class="btn btn-branding">Contact Me</a>
+      <a href="/contact.html" class="btn btn-branding" title="Contact me"
+        >Contact Me</a
+      >
     </div>
     <div class="container">
       <p class="text-center grid-title">
-        Featured Project which my best projects be choice to show
+        Featured Projects - more available on my work page
       </p>
       <div class="row mb-5">
         <div class="col d-none d-lg-block">
-          <img class="img-fluid" src="/images/tea.png" alt="tea project" />
+          <img
+            class="img-fluid"
+            src="/images/tea.png"
+            alt="Tea project preview"
+          />
         </div>
         <div class="col">
           <div class="project-description">
             <h2>Tea Project</h2>
             <p class="muted-color">
               Landing page for a website dedicated to my love of tea, with
-              interactive tea-making facilities built with vanilla JavaScript
+              interactive tea-making facilities built with JavaScript
             </p>
-            <a class="btn btn-branding-outline" href="#">Learn more</a>
+            <a
+              title="Go to projects"
+              class="btn btn-branding-outline"
+              href="/work.html"
+              >Learn more</a
+            >
           </div>
         </div>
       </div>
@@ -81,16 +102,25 @@
           <div class="project-description">
             <h2>Weather App</h2>
             <p class="muted-color">
-              Created with vanilla JavaScript and uses API calls to retrieve
-              up-to-date current and forecast weather information for any city
-              around the world. User can find a city using the search engine or
-              by the app's location button to find their current position
+              Created with JavaScript and uses API calls to retrieve up-to-date
+              current and forecast weather information for any city around the
+              world. User can find a city using the search engine or by the
+              app's location button to find their current position
             </p>
-            <a class="btn btn-branding-outline" href="#">Learn more</a>
+            <a
+              title="Go to projects"
+              class="btn btn-branding-outline"
+              href="/work.html"
+              >Learn more</a
+            >
           </div>
         </div>
         <div class="col d-none d-lg-block">
-          <img class="img-fluid" src="/images/weather.png" alt="tea project" />
+          <img
+            class="img-fluid"
+            src="/images/weather.png"
+            alt="Weather app preview"
+          />
         </div>
       </div>
       <div class="row mb-5">
@@ -98,18 +128,20 @@
           <img
             class="img-fluid"
             src="/images/dictionary.png"
-            alt="tea project"
+            alt="Dictionary app preview"
           />
         </div>
         <div class="col">
           <div class="project-description">
-            <h2>React Project</h2>
+            <h2>Dictionary</h2>
             <p class="muted-color">
               The project I would have created had I done the React course
               first, but you suggested to start with Responsive and that's what
               I did. So watch this space.
             </p>
-            <a class="btn btn-branding-outline" href="#">Learn more</a>
+            <a title="Go to projects" class="btn btn-branding-outline" href="#"
+              >Learn more</a
+            >
           </div>
         </div>
       </div>
@@ -117,34 +149,60 @@
     <div class="container">
       <footer>
         <section
-          class="d-block d-lg-flex justify-content-between align-items-center work-inquiry"
+          class="d-block d-lg-flex justify-content-between align-items-center contact-box"
         >
           <div class="mb-3 mb-lg-0">
             <h3>Work Inquiry</h3>
-            <p class="muted-color">
-              Let's work together and i'll help you by all my best
-            </p>
+            <p class="muted-color">Let's work together</p>
           </div>
           <div class="mb-3 mb-lg-0">
-            <a href="#" class="btn btn-branding">Let's talk here</a>
+            <a
+              title="Contact Yael"
+              href="/contact.html"
+              class="btn btn-branding"
+              >Contact me</a
+            >
           </div>
         </section>
         <div class="email-link-container">
-          <a class="email-link" href="mailto:myemail@emailprovider">
+          <a
+            title="Email Yael"
+            class="email-link"
+            href="mailto:myemail@emailprovider"
+          >
             myemail@emailprovider
           </a>
         </div>
         <div class="social d-flex justify-content-center">
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="fab fa-twitter"></i
+          <a
+            title="Github profile"
+            href="https://github.com/Lellien"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            title="Twitter profile"
+            href="https://www.twitter.com"
+            target="_blank"
+            ><i class="fab fa-twitter"></i
           ></a>
-          <a href="https://github.com/Lellien" target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://www.instagram.com" target="_blank"
-            ><i class="fab fa-instagram"></i
+          <a
+            title="LinkedIn profile"
+            href="https://www.linkedin.com/in/yael-fromm/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
           ></a>
         </div>
+        <p class="text-center mt-5 source-info">
+          This project was coded by Yael Fromm and is
+          <a
+            title="Github repository"
+            href="https://github.com/Lellien/SheCodes-Responsive-Portfolio-project"
+            target="_blank"
+            >open sourced</a
+          >
+        </p>
       </footer>
     </div>
   </body>
