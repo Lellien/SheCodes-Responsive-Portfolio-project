@@ -214,7 +214,8 @@ p.grid-title {
   margin: 16px 0 9px;
 }
 
-.content p.project-tag {
+.content .project-tag p,
+.project-box {
   font-size: 14px;
 }
 
@@ -232,7 +233,7 @@ img.profile-img {
 }
 
 img.project-img {
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
   /* border: 10px solid var(--secondary-color); */
 }
 
@@ -247,6 +248,27 @@ img.logo {
   margin-right: 10px;
   /* color: var(--branding-color);
   text-shadow: -1px 0px 0px var(--alt-text-color); */
+}
+.project-tag h3 {
+  margin: 25px 0 6px;
+}
+
+.project-box {
+  border-bottom: 10px solid var(--secondary-color);
+  border-right: 12px solid var(--secondary-color);
+  border-left: 12px solid var(--secondary-color);
+  padding: 12px;
+  border-radius: 0 0 20px 20px;
+}
+.project-box .btn {
+  margin-top: 0;
+  box-shadow: 0px 1px 5px rgba(var(--alt-text-color-rgb), 0.2);
+}
+.project-box .btn:hover {
+  background: var(--secondary-color);
+  border: inset;
+  font-weight: 700;
+  color: var(--branding-color);
 }
 
 @media (max-width: 992px) {
