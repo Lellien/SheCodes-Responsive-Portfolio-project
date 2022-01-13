@@ -1,11 +1,19 @@
 :root {
-  --branding-color: #6c63ff;
-  --branding-color-rgb: 108, 99, 255;
-  --secondary-color: #f9f7fe;
-  --alt-text-color: #272142;
-  --default-font-family: "Poppins", sans-serif;
-  --heading-font-family: "Playfair Display", serif;
+  --branding-color: #4599b5;
+  --branding-color-rgb: 69, 153, 181;
+  --secondary-color: #f6fafe;
+  --alt-text-color: #203640;
+  --alt-text-color-rgb: 32, 54, 64;
+  --default-font-family: "Urbanist", sans-serif;
+  --heading-font-family: "Libre Baskerville", serif;
 }
+
+/* Branding Hsl 195 45 49 
+
+Secondary Hsl 209 78 98 
+
+Text alt 200 33 19  */
+
 body {
   font-family: var(--default-font-family);
 }
@@ -18,7 +26,7 @@ h5,
 h6 {
   color: black;
   font-family: var(--heading-font-family);
-  font-weight: bold;
+  font-weight: 700;
   margin: 0;
 }
 
@@ -36,6 +44,7 @@ p {
   font-size: 16px;
   line-height: 30px;
   margin: 0;
+  font-weight: 500;
 }
 
 ul {
@@ -58,7 +67,7 @@ nav a {
   text-decoration: none;
   color: var(--alt-text-color);
   transition: all 100ms ease-in-out;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 nav li.active a,
@@ -93,7 +102,7 @@ footer .email-link-container {
   text-align: center;
   font-size: 24px;
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 footer .email-link {
@@ -109,44 +118,46 @@ footer .source-info a {
 
 footer .social a {
   margin: 0 20px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   font-size: 18px;
   color: var(--branding-color);
-  padding: 15px;
-  background: radial-gradient(
-    circle 20px at center,
-    rgba(var(--branding-color-rgb), 0.05) 100%,
-    transparent 100%
-  );
+  background: rgba(var(--branding-color-rgb), 0.05);
+  border-radius: 50%;
   transition: all 100ms ease-in-out;
 }
 
 footer .social a:hover {
   color: var(--secondary-color);
-  background: radial-gradient(
-    circle 20px at center,
-    var(--branding-color) 100%,
-    transparent 100%
-  );
+  background-color: var(--branding-color);
 }
 
 .hero {
-  background: #f9f7fe;
+  background: var(--secondary-color);
   text-align: center;
   padding: 80px 20px;
 }
 
 .hero p {
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .hero h2 {
   font-family: var(--default-font-family);
   color: var(--alt-text-color);
   font-size: 24px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.5;
   margin: 24px 0 49px;
+}
+
+.btn:hover {
+  color: var(--alt-text-color);
 }
 
 .btn-branding {
@@ -155,7 +166,7 @@ footer .social a:hover {
   color: white;
   font-size: 18px;
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 p.grid-title {
@@ -165,7 +176,7 @@ p.grid-title {
 }
 
 .btn-branding-outline {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   color: var(--branding-color);
   border: 1px solid var(--branding-color);
@@ -181,7 +192,7 @@ p.grid-title {
 }
 
 .muted-color {
-  opacity: 70%;
+  opacity: 80%;
 }
 
 .content-wrapper {
